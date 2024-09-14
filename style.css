@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display input {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    font-size: 24px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+/* Flexbox container for the button groups */
+.button-groups {
+    display: flex;
+    gap: 200px; /* Space between the scientific and standard button groups */
+}
+
+/* Group 1: Special functions */
+.special-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px; /* Space between groups */
+}
+
+.special-buttons button {
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: #0D6E2C;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.special-buttons button:hover {
+    background-color: #0D6E2C;
+}
+
+/* Group 2: Standard calculator buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #ccc;
+}
+
+/* Group 3: Clear button */
+.clear-button {
+    display: grid;
+    grid-template-columnrs: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.clear-button button {
+    height: 200px;
+    width: 120px;
+    font-size: 54px;
+    border: none;
+    background-color:#d32f2f;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.clear-button:hover {
+    background-color: #ccc;
+}
+
+/* Specific styling for operator buttons using the class */
+.buttons .operator {
+    background-color: #ff7043;
+    color: white;
+}
+
+.buttons .operator:hover {
+    background-color: #ff5722;
+}
+
+/* Specific styling for the equals button */
+.buttons .equals {
+    background-color: #4caf50;
+    color: white;
+}
+
+.buttons .equals:hover {
+    background-color: #43a047;
+}
+
+/* Specific styling for the clear button */
+.buttons .clear {
+    background-color: #e53935;
+    color: white;
+}
+
+.buttons .clear:hover {
+    background-color: #d32f2f;
+}
